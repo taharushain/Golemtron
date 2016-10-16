@@ -1,0 +1,142 @@
+      
+<!--========== BEGIN HEADER ==========-->
+<header id="header" class="header-main">
+
+  <!-- Begin Navbar -->
+  <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation"> <!-- Classes: navbar-default, navbar-inverse, navbar-fixed-top, navbar-fixed-bottom, navbar-transparent. Note: If you use non-transparent navbar, set "height: 98px;" to #header -->
+
+    <div class="container">
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand my-brand" href="#"><strong>GOLEMTRON</strong></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/packages">Packages</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a class="page-scroll active" href="#">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+  <!-- End Navbar -->
+
+</header>
+<!-- ========= END HEADER =========-->
+
+<div class="container-block text-center" id="team-container-two">
+  <!-- ======================= -->
+
+  <!-- Begin prices section -->
+  <section id="" class="page">
+
+    <!-- Begin page header-->
+    <div class="text-center">
+      <h2>Lets get in touch</h2>
+      <div class=""></div>
+      <p class="subtitle">We always love to hear from you</p>
+    </div>
+    <!-- End page header-->
+
+    <div class="extra-space-l"></div>
+
+    <!-- Begin prices -->
+    <div class="prices">
+      <div class="row">
+
+
+
+        <div class="price-box col-md-12" >
+          <div class="panel panel-default">
+            <div class="panel-heading text-center" id="prices-panel-default-heading">
+              <i class="fa fa-fighter-jet fa-2x"></i>
+              <h3>Write to us</h3>
+            </div>
+            <div class="panel-body text-center">
+              <!-- <p class="lead">We will contact you soon after you place an order</p> -->
+              <h2>We will get back to you as soon as possible</h2>
+
+            </div>
+            <div class="contact-form">
+
+             <%= form_for @message do |f| %>
+             <%= f.hidden_field :type, :value => "contact" %>          
+
+             <div class="form-group">
+               <%= f.text_field :name, class: 'form-control input-lg text-center', placeholder: 'Your Name',id: 'order-form-name', required: 'true'%>
+             </div>
+             <div class="form-group">
+               <%= f.text_field :subject, class: 'form-control input-lg text-center', placeholder: 'Subject',id: 'order-form-subject', required: 'true'%>
+             </div>
+             <div class="form-group">
+               <%= f.email_field :email, class: 'form-control input-lg text-center', placeholder: 'Your Email Address',id: 'order-form-address',required: 'true' %>
+             </div>
+             <div class="form-group">
+               <%= f.text_area :content, class: 'form-control input-lg text-center', placeholder: 'Message',id: 'order-form-content', required: 'true'%>
+             </div>
+             <div class="panel-footer text-center">
+               <%= f.submit 'Send', class: 'btn btn-custom btn-block', id: 'btn-place-order' %>
+               <br>
+               <div id="order_messages" class="text-center"></div>
+               <br>
+
+               <% end %>
+
+
+             </div>  
+
+
+
+           </div>                    
+         </div>
+
+         <div class="order-success">
+           <h2 id="successful-order" class="text-center" hidden>Your message was sent, someone will respond back soon.</h2>
+         </div>
+
+       </div> <!-- /.row -->
+     </div>
+     <!-- End prices -->
+     <!-- <div class="extra-space-l"></div> -->
+   </section>
+
+
+
+
+   <!-- =================== -->
+
+ </div>
+
+
+ <div class="footer">
+  <div class="container-block text-center">
+    <p class="copyright">Golemtron &copy; 2016</p>
+  </div>
+</div>
+
+<!-- 
+
+<% if @message.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= "#{pluralize(@message.errors.count, "error")} prohibited this message from being sent:" %>
+      </h2>
+
+      <ul>
+        <% @message.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      <ul>
+    </div>
+  <% end %> -->

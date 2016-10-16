@@ -1,6 +1,6 @@
 class WelcomeController < ApplicationController
   def home
-  
+
   end
   def about
   	
@@ -9,6 +9,6 @@ class WelcomeController < ApplicationController
   	@message = Message.new
   end
   def contact
-  	
+    @message = Message.new
   end
 end

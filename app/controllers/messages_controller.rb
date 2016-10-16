@@ -1,6 +1,5 @@
 class MessagesController < ApplicationController
 	def new
-		@message = Message.new
 	end
 
 	def create
@@ -17,6 +16,6 @@ class MessagesController < ApplicationController
 	private 
 
 	def message_params
-		params.require(:message).permit(:name, :email, :subject, :content)
+		params.require(:message).permit(:name, :email, :subject, :content, :type)
 	end
 end
