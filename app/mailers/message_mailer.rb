@@ -4,7 +4,7 @@ class MessageMailer < ApplicationMailer
 
   def message_me(msg)
     @msg = msg
-
-    mail from: @msg.email, subject: @msg.subject, body: @msg.content
+    @body = "Hi Taha!\nYou have got an order request from:"+ @msg.email + "\n" + @msg.content
+    mail subject: @msg.subject, body: @body
   end
 end
