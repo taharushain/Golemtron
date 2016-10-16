@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Spina::Engine => '/'
 	resources :messages, only: [:new, :create]
 	root 'welcome#home'
 	get "/about" => "welcome#about"
