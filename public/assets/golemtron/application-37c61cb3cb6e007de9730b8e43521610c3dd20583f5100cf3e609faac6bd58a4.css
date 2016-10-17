@@ -1,0 +1,1432 @@
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+/* ==========================================================================
+   Variabeles
+   ========================================================================== */
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+/* Reset Modified from Normalize.css */
+/* Base Reset */
+/* line 10, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 18, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+html {
+  min-height: 100%;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 62.5%;
+}
+
+/* line 25, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* line 39, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  color: grey;
+}
+
+/* Media */
+/* line 51, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 56, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* Images */
+/* line 63, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 65, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+img {
+  max-width: 100%;
+  font-style: italic;
+  vertical-align: middle;
+  border: 0;
+}
+
+/* line 72, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 74, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+svg {
+  pointer-events: none;
+  max-height: 100%;
+}
+
+/* Links */
+/* line 82, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: blue;
+}
+
+/* line 88, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* Text Selectors */
+/* line 92, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 93, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 94, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+i, em {
+  font-weight: italic;
+}
+
+/* Content */
+/* line 98, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+figure {
+  margin: 0;
+}
+
+/* line 103, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+hr {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background: #EFF1F3;
+}
+
+/* Code Blocks */
+/* line 114, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 120, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/base/_reset.scss */
+ul {
+  list-style: auto;
+  margin-left: 10px;
+  margin-right: 0px;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+/* line 5, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/utilities/_layout.scss */
+.u-container {
+  max-width: 62rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* ==========================================================================
+   Seperator
+   ========================================================================== */
+/* line 5, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/utilities/_seperator.scss */
+.u-seperate {
+  margin-right: .45rem;
+  margin-left: .25rem;
+  color: grey;
+}
+/* line 9, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/utilities/_seperator.scss */
+.u-seperate:after {
+  content: '\00a0/';
+}
+
+/* ==========================================================================
+   Page
+   ========================================================================== */
+/* line 9, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_page.scss */
+.c-page__header {
+  margin-bottom: 10rem;
+}
+/* line 12, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_page.scss */
+.c-page__header h1 {
+  margin-bottom: 2.5rem;
+  color: grey;
+}
+
+/* line 21, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_page.scss */
+.c-page__footer {
+  margin-bottom: 10rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+/* line 38, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_page.scss */
+.c-page__footer p {
+  color: grey;
+}
+
+/* ==========================================================================
+   Article
+   ========================================================================== */
+/* line 5, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_article.scss */
+.c-article {
+  margin-bottom: 10rem;
+}
+
+/* line 9, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_article.scss */
+.c-article__header {
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 400px) {
+  /* line 9, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_article.scss */
+  .c-article__header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+  }
+}
+
+/* line 30, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_article.scss */
+.c-article__title {
+  color: grey;
+}
+
+/* line 34, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_article.scss */
+.c-article__time {
+  color: grey;
+}
+
+/* line 38, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_article.scss */
+.n-article-categories {
+  width: 100%;
+  color: grey;
+}
+
+/* line 43, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_article.scss */
+.c-article__main {
+  margin-bottom: 5rem;
+  color: grey;
+}
+/* line 47, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_article.scss */
+.c-article__main > * {
+  margin-bottom: 1.8rem;
+}
+/* line 63, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_article.scss */
+.c-article__main strong {
+  color: grey;
+  font-weight: 400;
+}
+/* line 68, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_article.scss */
+.c-article__main blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 1.8rem;
+  border-left: 1px solid #EFF1F3;
+}
+@media screen and (max-width: 400px) {
+  /* line 76, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_article.scss */
+  .c-article__main ul,
+  .c-article__main ol {
+    margin-left: 2.1rem;
+  }
+}
+
+/* ==========================================================================
+   Tip
+   ========================================================================== */
+/* line 5, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_tag.scss */
+.c-tag {
+  margin-right: 1rem;
+  position: relative;
+  white-space: nowrap;
+  color: grey;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+/* line 12, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_tag.scss */
+.c-tag a {
+  color: grey;
+}
+/* line 16, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_tag.scss */
+.c-tag:before {
+  color: grey;
+  content: '#\2009';
+  padding-right: 2px;
+}
+
+/* ==========================================================================
+   Archives
+   ========================================================================== */
+/* line 5, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_archives.scss */
+.c-archives {
+  margin-bottom: 10rem;
+}
+
+/* line 9, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_archives.scss */
+.c-archives__year {
+  margin-bottom: 2.5rem;
+}
+
+/* line 13, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_archives.scss */
+.c-archives__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2.5rem;
+  list-style: none;
+}
+
+/* line 20, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_archives.scss */
+.c-archives__item {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid #EFF1F3;
+}
+@media screen and (min-width: 400px) {
+  /* line 20, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_archives.scss */
+  .c-archives__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+/* line 45, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/components/_archives.scss */
+.c-archives__item p {
+  color: #515862;
+}
+
+/* Solarized Dark
+
+For use with Jekyll and Pygments
+
+http://ethanschoonover.com/solarized
+
+SOLARIZED HEX      ROLE
+--------- -------- ------------------------------------------
+base03    #002b36  background
+base01    #586e75  comments / secondary content
+base1     #93a1a1  body text / default code / primary content
+orange    #cb4b16  constants
+red       #dc322f  regex, special keywords
+blue      #268bd2  reserved keywords
+cyan      #2aa198  strings, numbers
+green     #859900  operators, other keywords
+*/
+/* line 22, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight {
+  border-radius: 4px;
+  background: #FDFDFD;
+  border: 1px solid #E8E8EB;
+  color: #93a1a1;
+}
+/* line 28, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .gutter {
+  padding: 1.2rem;
+  border-right: 1px solid #E8E8EB;
+}
+/* line 33, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .code {
+  padding: 1.2rem;
+}
+
+/* line 37, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+span.lineno {
+  padding: 1rem;
+  border-right: 1px solid #E8E8EB;
+}
+
+/* line 41, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .c {
+  color: #586e75;
+}
+
+/* Comment */
+/* line 42, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .err {
+  color: #93a1a1;
+}
+
+/* Error */
+/* line 43, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .g {
+  color: #93a1a1;
+}
+
+/* Generic */
+/* line 44, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .k {
+  color: #859900;
+}
+
+/* Keyword */
+/* line 45, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .l {
+  color: #93a1a1;
+}
+
+/* Literal */
+/* line 46, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .n {
+  color: #93a1a1;
+}
+
+/* Name */
+/* line 47, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .o {
+  color: #859900;
+}
+
+/* Operator */
+/* line 48, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .x {
+  color: #cb4b16;
+}
+
+/* Other */
+/* line 49, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .p {
+  color: #93a1a1;
+}
+
+/* Punctuation */
+/* line 50, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .cm {
+  color: #586e75;
+}
+
+/* Comment.Multiline */
+/* line 51, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .cp {
+  color: #859900;
+}
+
+/* Comment.Preproc */
+/* line 52, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .c1 {
+  color: #586e75;
+}
+
+/* Comment.Single */
+/* line 53, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .cs {
+  color: #859900;
+}
+
+/* Comment.Special */
+/* line 54, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .gd {
+  color: #2aa198;
+}
+
+/* Generic.Deleted */
+/* line 55, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .ge {
+  color: #93a1a1;
+  font-style: italic;
+}
+
+/* Generic.Emph */
+/* line 56, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .gr {
+  color: #dc322f;
+}
+
+/* Generic.Error */
+/* line 57, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .gh {
+  color: #cb4b16;
+}
+
+/* Generic.Heading */
+/* line 58, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .gi {
+  color: #859900;
+}
+
+/* Generic.Inserted */
+/* line 59, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .go {
+  color: #93a1a1;
+}
+
+/* Generic.Output */
+/* line 60, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .gp {
+  color: #93a1a1;
+}
+
+/* Generic.Prompt */
+/* line 61, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .gs {
+  color: #93a1a1;
+  font-weight: bold;
+}
+
+/* Generic.Strong */
+/* line 62, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .gu {
+  color: #cb4b16;
+}
+
+/* Generic.Subheading */
+/* line 63, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .gt {
+  color: #93a1a1;
+}
+
+/* Generic.Traceback */
+/* line 64, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .kc {
+  color: #cb4b16;
+}
+
+/* Keyword.Constant */
+/* line 65, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .kd {
+  color: #268bd2;
+}
+
+/* Keyword.Declaration */
+/* line 66, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .kn {
+  color: #859900;
+}
+
+/* Keyword.Namespace */
+/* line 67, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .kp {
+  color: #859900;
+}
+
+/* Keyword.Pseudo */
+/* line 68, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .kr {
+  color: #268bd2;
+}
+
+/* Keyword.Reserved */
+/* line 69, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .kt {
+  color: #dc322f;
+}
+
+/* Keyword.Type */
+/* line 70, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .ld {
+  color: #93a1a1;
+}
+
+/* Literal.Date */
+/* line 71, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .m {
+  color: #2aa198;
+}
+
+/* Literal.Number */
+/* line 72, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .s {
+  color: #2aa198;
+}
+
+/* Literal.String */
+/* line 73, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .na {
+  color: #93a1a1;
+}
+
+/* Name.Attribute */
+/* line 74, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .nb {
+  color: #B58900;
+}
+
+/* Name.Builtin */
+/* line 75, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .nc {
+  color: #268bd2;
+}
+
+/* Name.Class */
+/* line 76, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .no {
+  color: #cb4b16;
+}
+
+/* Name.Constant */
+/* line 77, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .nd {
+  color: #268bd2;
+}
+
+/* Name.Decorator */
+/* line 78, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .ni {
+  color: #cb4b16;
+}
+
+/* Name.Entity */
+/* line 79, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .ne {
+  color: #cb4b16;
+}
+
+/* Name.Exception */
+/* line 80, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .nf {
+  color: #268bd2;
+}
+
+/* Name.Function */
+/* line 81, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .nl {
+  color: #93a1a1;
+}
+
+/* Name.Label */
+/* line 82, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .nn {
+  color: #93a1a1;
+}
+
+/* Name.Namespace */
+/* line 83, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .nx {
+  color: #93a1a1;
+}
+
+/* Name.Other */
+/* line 84, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .py {
+  color: #93a1a1;
+}
+
+/* Name.Property */
+/* line 85, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .nt {
+  color: #268bd2;
+}
+
+/* Name.Tag */
+/* line 86, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .nv {
+  color: #268bd2;
+}
+
+/* Name.Variable */
+/* line 87, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .ow {
+  color: #859900;
+}
+
+/* Operator.Word */
+/* line 88, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .w {
+  color: #93a1a1;
+}
+
+/* Text.Whitespace */
+/* line 89, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .mf {
+  color: #2aa198;
+}
+
+/* Literal.Number.Float */
+/* line 90, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .mh {
+  color: #2aa198;
+}
+
+/* Literal.Number.Hex */
+/* line 91, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .mi {
+  color: #2aa198;
+}
+
+/* Literal.Number.Integer */
+/* line 92, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .mo {
+  color: #2aa198;
+}
+
+/* Literal.Number.Oct */
+/* line 93, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .sb {
+  color: #586e75;
+}
+
+/* Literal.String.Backtick */
+/* line 94, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .sc {
+  color: #2aa198;
+}
+
+/* Literal.String.Char */
+/* line 95, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .sd {
+  color: #93a1a1;
+}
+
+/* Literal.String.Doc */
+/* line 96, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .s2 {
+  color: #2aa198;
+}
+
+/* Literal.String.Double */
+/* line 97, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .se {
+  color: #cb4b16;
+}
+
+/* Literal.String.Escape */
+/* line 98, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .sh {
+  color: #93a1a1;
+}
+
+/* Literal.String.Heredoc */
+/* line 99, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .si {
+  color: #2aa198;
+}
+
+/* Literal.String.Interpol */
+/* line 100, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .sx {
+  color: #2aa198;
+}
+
+/* Literal.String.Other */
+/* line 101, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .sr {
+  color: #dc322f;
+}
+
+/* Literal.String.Regex */
+/* line 102, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .s1 {
+  color: #2aa198;
+}
+
+/* Literal.String.Single */
+/* line 103, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .ss {
+  color: #2aa198;
+}
+
+/* Literal.String.Symbol */
+/* line 104, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .bp {
+  color: #268bd2;
+}
+
+/* Name.Builtin.Pseudo */
+/* line 105, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .vc {
+  color: #268bd2;
+}
+
+/* Name.Variable.Class */
+/* line 106, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .vg {
+  color: #268bd2;
+}
+
+/* Name.Variable.Global */
+/* line 107, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .vi {
+  color: #268bd2;
+}
+
+/* Name.Variable.Instance */
+/* line 108, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_highlight.scss */
+.highlight .il {
+  color: #2aa198;
+}
+
+/* Literal.Number.Integer.Long */
+/* line 1, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.n-nav-brand {
+  position: fixed;
+  z-index: 5;
+  top: 20px;
+  left: 20px;
+}
+/* line 6, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.n-nav-brand img {
+  width: 45px;
+}
+
+/* line 11, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.site-author {
+  font-size: 2.4rem !important;
+  margin: 0 !important;
+  line-height: 1.5;
+}
+
+/* line 16, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.site-description {
+  font-size: 1.8rem !important;
+  color: rgba(22, 53, 65, 0.6) !important;
+  margin-bottom: 2.5rem;
+}
+
+/* line 21, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.c-article__main {
+  overflow: hidden;
+}
+
+/* line 26, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.n-similar-posts h4 {
+  font-size: 2rem;
+  margin: 10rem 0 10px 0;
+}
+
+/* line 32, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.n-comments-title {
+  font-size: 2rem;
+  margin: 5rem 0 10px 0;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #EFF1F3;
+}
+
+/* line 40, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.n-about-profile-picture {
+  float: left;
+  width: 150px;
+  margin: 10px 25px 10px 0;
+}
+/* line 44, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.n-about-profile-picture img {
+  border-radius: 150px;
+}
+
+/* line 49, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.n-page-title {
+  font-size: 3.2rem !important;
+  line-height: 1.5;
+  margin: 0 0 15px 0;
+}
+/* line 55, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.n-page-title.n-tag:before {
+  color: grey;
+  content: '#\2009';
+  padding-right: 2px;
+}
+
+/* line 63, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.n-categorie-description {
+  font-size: 1.8rem !important;
+  color: rgba(22, 53, 65, 0.6) !important;
+  margin-bottom: 2.5rem;
+}
+
+/* line 69, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+ul.n-categorie-description > li {
+  margin-bottom: 10px;
+}
+
+/* line 74, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.n-article-cover {
+  margin: -25px auto 35px auto;
+}
+
+/* line 77, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.n-next-prev {
+  font-size: 1.6rem !important;
+  margin: 30px 0 10px 0;
+  text-align: center;
+  color: rgba(22, 53, 65, 0.6);
+}
+
+@media screen and (max-width: 768px) {
+  /* line 85, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .n-about-profile-picture {
+    float: none;
+    margin: 5px auto 35px auto;
+  }
+}
+/* line 91, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav .n-cd-categorie {
+  display: inline-block;
+  background: rgba(2, 23, 37, 0.3);
+  border: 1px solid rgba(2, 23, 37, 0.3);
+  border-radius: 30px;
+  padding: 3px 10px;
+  font-size: 1.3rem;
+}
+/* line 98, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav .n-cd-categorie a {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 100, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav .n-cd-categorie a:hover {
+  color: white;
+}
+
+/* line 106, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(2, 23, 37, 0.95);
+  height: 50px;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 119, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-header {
+    height: 80px;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  /* line 126, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-header {
+    background: transparent;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  /* line 140, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-header.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -80px;
+    background: transparent;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  /* line 149, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-header.is-visible {
+    /* if the user changes the scrolling direction, we show the header */
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  /* line 157, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-header.menu-is-open {
+    /* add a background color to the header when the navigation is open */
+    background: transparent;
+    z-index: 10;
+  }
+}
+/* line 164, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-logo {
+  display: block;
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: .875em;
+}
+
+/* line 176, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-logo img {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 180, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-logo {
+    left: 2.6em;
+  }
+}
+/* line 185, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-secondary-nav {
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 10em;
+  /* hidden on small devices */
+  display: none;
+}
+
+/* line 198, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-secondary-nav li {
+  display: inline-block;
+  margin-left: 2.2em;
+}
+
+/* line 202, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-secondary-nav a {
+  display: inline-block;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 209, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-secondary-nav {
+    display: block;
+  }
+}
+/* line 214, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav-trigger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  background-color: #03263d;
+}
+
+/* line 222, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav-trigger .cd-menu-text {
+  color: #353535;
+  text-transform: uppercase;
+  font-weight: 700;
+  /* hide the text on small devices */
+  display: none;
+}
+
+/* line 229, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav-trigger .cd-menu-icon {
+  /* this span is the central line of the menu icon */
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 18px;
+  height: 2px;
+  background-color: #353535;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  /* these are the upper and lower lines in the menu icon */
+}
+
+/* line 250, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav-trigger .cd-menu-icon::before, .cd-primary-nav-trigger .cd-menu-icon:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #353535;
+  right: 0;
+  -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+  -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
+  transition: transform .3s, top .3s, background-color 0s;
+}
+
+/* line 261, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav-trigger .cd-menu-icon::before {
+  top: -5px;
+}
+
+/* line 264, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav-trigger .cd-menu-icon::after {
+  top: 5px;
+}
+
+/* line 267, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* line 270, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::before, .cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {
+  background-color: white;
+}
+
+/* line 273, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/* line 281, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav-trigger .cd-menu-icon.is-clicked::after {
+  top: 0;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 290, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-primary-nav-trigger {
+    width: 100px;
+    padding-left: 1em;
+    background-color: transparent;
+    height: 30px;
+    line-height: 30px;
+    right: 2.2em;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /* line 305, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-primary-nav-trigger .cd-menu-text {
+    display: inline-block;
+  }
+
+  /* line 308, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-primary-nav-trigger .cd-menu-icon {
+    left: auto;
+    right: 1em;
+    -webkit-transform: translateX(0) translateY(-50%);
+    -moz-transform: translateX(0) translateY(-50%);
+    -ms-transform: translateX(0) translateY(-50%);
+    -o-transform: translateX(0) translateY(-50%);
+    transform: translateX(0) translateY(-50%);
+  }
+}
+/* line 319, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav {
+  /* by default it's hidden - on top of the viewport */
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(2, 23, 37, 0.96);
+  z-index: 2;
+  text-align: center;
+  padding: 50px 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow: auto;
+  /* this fixes the buggy scrolling on webkit browsers - mobile devices only - when overflow property is applied */
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+/* line 347, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav li {
+  font-size: 22px;
+  font-size: 1.375rem;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: .2em 0;
+  text-transform: capitalize;
+}
+
+/* line 356, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav a {
+  display: inline-block;
+  padding: .4em 1em;
+  border-radius: 0.25em;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  transition: background 0.2s;
+}
+
+/* line 364, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.no-touch .cd-primary-nav a:hover {
+  background-color: #e36767;
+}
+
+/* line 367, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav .cd-label {
+  color: #06446e;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin: 2.4em 0 .8em;
+}
+
+/* line 375, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav .cd-social {
+  display: inline-block;
+  margin: 0 .4em;
+}
+
+/* line 379, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav .cd-social a {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-image: url("../images/cd-socials.svg");
+  background-repeat: no-repeat;
+  /* image replacement */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+/* line 390, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav .cd-facebook a {
+  background-position: 0 0;
+}
+
+/* line 393, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav .cd-instagram a {
+  background-position: -44px 0;
+}
+
+/* line 396, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav .cd-dribbble a {
+  background-position: -88px 0;
+}
+
+/* line 399, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav .cd-twitter a {
+  background-position: -132px 0;
+}
+
+/* line 402, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav.is-visible {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 410, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-primary-nav {
+    padding: 80px 0;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  /* line 415, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-primary-nav li {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+
+  /* line 419, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-primary-nav .cd-label {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+/* line 425, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-intro {
+  position: relative;
+  height: 100%;
+  background: url("../img/cd-background-img.jpg") no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 434, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-intro h1 {
+  position: absolute;
+  width: 90%;
+  max-width: 1170px;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 454, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-intro h1 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  /* line 460, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-intro {
+    height: 700px;
+  }
+}
+/* line 465, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-main-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 469, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-main-content p {
+  line-height: 1.6;
+  margin: 2em 0;
+}
+
+@media only screen and (min-width: 1170px) {
+  /* line 474, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+  .cd-main-content p {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}
+/* line 481, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav .c-archives__list {
+  background: rgba(2, 23, 37, 0.1);
+}
+/* line 484, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav .c-archives__item {
+  border-top: 0px;
+  width: 55%;
+  margin: 0 auto;
+}
+/* line 489, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav .c-archives__item p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* line 494, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.n-cd-navigation {
+  font-size: 1.8rem !important;
+}
+
+/* line 498, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.cd-primary-nav {
+  padding: 0;
+  margin: 0;
+  padding-top: 100px;
+}
+
+/* line 504, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.n-header-h2-link {
+  color: rgba(22, 53, 65, 0.9) !important;
+}
+
+/* line 508, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/golemtron/vendor/_custom.scss */
+.n-post-excerpt {
+  color: rgba(22, 53, 65, 0.6) !important;
+  font-size: 1.6rem !important;
+  margin-top: 10px;
+  width: 100%;
+}

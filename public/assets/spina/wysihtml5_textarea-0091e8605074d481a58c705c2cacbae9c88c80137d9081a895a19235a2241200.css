@@ -1,0 +1,20 @@
+/* line 1, /home/trushain/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/Spina-template-2dff5faf3963/app/assets/stylesheets/spina/wysihtml5_textarea.sass */
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+/* line 4, /home/trushain/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/Spina-template-2dff5faf3963/app/assets/stylesheets/spina/wysihtml5_textarea.sass */
+img {
+  border-radius: 3px;
+  display: block;
+  height: auto;
+  margin: 13px 0;
+  max-height: 100px;
+  max-width: 100px;
+  width: auto;
+}
+
+/* line 13, /home/trushain/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/bundler/gems/Spina-template-2dff5faf3963/app/assets/stylesheets/spina/wysihtml5_textarea.sass */
+img:first-child {
+  margin-top: 0;
+}

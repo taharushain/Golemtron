@@ -1,0 +1,108 @@
+/* line 6, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+html {
+  font-size: 16px;
+}
+
+/* line 9, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* line 14, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* line 18, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+h1 {
+  font-size: 2.5rem;
+}
+
+/* line 20, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+h2 {
+  font-size: 2rem;
+}
+
+/* line 22, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+h3 {
+  font-size: 1.75rem;
+}
+
+/* line 24, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+h4 {
+  font-size: 1.5rem;
+}
+
+/* line 26, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+h5 {
+  font-size: 1.25rem;
+}
+
+/* line 28, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+h6 {
+  font-size: 1rem;
+}
+
+/* line 31, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 35, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 39, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+img {
+  vertical-align: middle;
+}
+
+/* line 42, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+a {
+  color: #0275d8;
+  text-decoration: none;
+}
+/* line 46, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+a:hover, a:focus {
+  color: #014c8c;
+  text-decoration: underline;
+}
+
+/* line 50, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 54, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+.nav {
+  padding-left: 0;
+  margin-bottom: 2rem;
+  list-style: none;
+}
+
+/* line 59, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+.nav-item {
+  display: inline-block;
+}
+
+/* line 62, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+.nav-item + .nav-item {
+  margin-left: 20px;
+}
+
+/* line 65, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+.nav-item.active > a {
+  text-decoration: underline;
+}
+
+/* line 68, /home/trushain/Desktop/ruby/Golemtron/app/assets/stylesheets/demo/application.css.sass */
+#languages {
+  float: right;
+}
