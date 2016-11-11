@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+	mount Bootsy::Engine => '/bootsy', as: 'bootsy'
 
 	resources :messages, only: [:new, :create]
 
@@ -10,7 +11,8 @@ Rails.application.routes.draw do
 	get "/packages" => "welcome#packages"
 	get "/contact" => "welcome#contact"
 
-	get "/blog/editor/home" => "editors#index"
+	get "/blog/editor" => "editors#index"
+	get "/blog/editor/new" => "editors#create_post"
 	# get "/blog" => "blog#home"
 	resources :posts, path: '/blog' do
 		resources :comments

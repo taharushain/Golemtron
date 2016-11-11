@@ -1,6 +1,6 @@
 class EditorsController < ApplicationController
 	before_action :authenticate_user!
-    before_action :is_editor
+  before_action :is_editor
 
 	layout 'editor'
 
@@ -8,12 +8,17 @@ class EditorsController < ApplicationController
 		
 	end
 
+  def create_post
+    @post = current_user.posts.build
+  end
+
+
 
 private
 
-  # def post_params
-  #   params.require(:post).permit(:image, :caption)
-  # end
+  def post_params
+    params.require(:post).permit(:title, :content, :bootsy_image_gallery_id)
+  end
 
   # def set_post
   #   @post = Post.find(params[:id])

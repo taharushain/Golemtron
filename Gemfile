@@ -19,10 +19,14 @@ gem 'font-awesome-sass', '~> 4.6.2'
 gem 'mail_form'
 gem 'simple_form'
 gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
+
 gem "paperclip", "~> 5.0.0"
+gem 'carrierwave'
+
 gem 'devise'
 gem 'kaminari'
 gem 'acts_as_votable', '~> 0.10.0'
+gem 'bootsy', '~> 2.3', '>= 2.3.1'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'jquery-turbolinks'

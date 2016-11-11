@@ -2,6 +2,7 @@ class PostsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_post, only: [:show, :edit, :update, :destroy, :like]
   before_action :owned_post, only: [:edit, :update, :destroy]
+  before_action :is_editor, only: [:create, :update, :destroy]
 
   def index
     @posts = Post.all.order('created_at DESC').page params[:page]
@@ -19,10 +20,10 @@ class PostsController < ApplicationController
 
     if @post.save
       flash[:success] = "Your post has been created!"
-      redirect_to root_path
+      redirect_to blog_editor_path
     else
       flash[:alert] = "Your new post couldn't be created!  Please check the form."
-      render :new
+      redirect_to blog_editor_new_path 
     end
   end
 
@@ -57,7 +58,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:image, :caption)
+    params.require(:post).permit(:title, :content, :bootsy_image_gallery_id)
   end
 
   def set_post
@@ -69,6 +70,16 @@ class PostsController < ApplicationController
       flash[:alert] = "That post doesn't belong to you!"
       redirect_to root_path
     end
+  end
+
+  def is_editor
+
+    if current_user.is_a? Editor
+    
+    else
+      flash[:alert] = "You are not an author, don't try to fool us -__-"
+      redirect_to root_path
+    end    
   end
 
 end

@@ -1,36 +1,35 @@
 <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="text-center sidebar-brand">
-                    <a href="#">Golemtron</a>
-                </li>
-                
-                <li class="text-center"><%= image_tag current_user.avatar.url(:thumb), class:'center-block img-responsive editor-circle' %>
-                </li>
-
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Published</a>
-                </li>
-                <li>
-                    <a href="#">Under Review</a>
-                </li>
-                <li>
-                    <a href="#">Drafts</a>
-                </li>
-                <li>
-                    <a href="#">Setting</a>
-                </li>
-                <li>
-                    <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="text-center sidebar-brand">
+            <a href="#">Golemtron</a>
+        </li>
         
+        <li class="text-center"><%= image_tag current_user.avatar.url(:thumb), class:'center-block img-responsive editor-circle' %>
+        </li>
+
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Published</a>
+        </li>
+        <li>
+            <a href="#">Under Review</a>
+        </li>
+        <li>
+            <a href="#">Drafts</a>
+        </li>
+        <li>
+            <a href="#">Setting</a>
+        </li>
+        <li>
+            <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+
+    </ul>
+</div>
+<!-- /#sidebar-wrapper -->
