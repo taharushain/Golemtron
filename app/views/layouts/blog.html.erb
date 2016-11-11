@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Golemtron - Blog</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <meta name="description" content="Golemtron provides creative solutions for your business problems. From software solutions to branding and marketing, we got it all covered." />
+  <meta name="keywords" content="Golemtron, Social Media Marketing, SEO, Development, Automation, Programming, Software Solutions, E-Commerece Solutions, Android Development, IOS Development, Mobile Apps Development, Web Development, Desktop Applications, Scalable Software" /> -->
+  <meta name="author" content="golemtron.com" />
+
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+<body>
+
+<%= render 'layouts/blog_navbar' %>
+
+
+<div class="container">
+  <% flash.each do |name, msg| %>
+  <%= content_tag :div, msg, class: [:alert, alert_for(name)] %>
+  <% end %>
+  <%= yield %>
+</div>
+
+
+
+
+</body>
+</html>
+

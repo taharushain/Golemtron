@@ -14,5 +14,9 @@ module Golemtron
     # config.action_mailer.delivery_method = :sendmail
     # config.action_mailer.perform_deliveries = true
     # config.action_mailer.raise_delivery_errors = true
+    config.to_prepare do
+    	Devise::SessionsController.layout "blog"
+    	# Devise::RegistrationsController.layout proc{ |controller| user_signed_in? ? "application"   : "devise" }
+    end
 end
 end
