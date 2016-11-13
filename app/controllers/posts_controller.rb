@@ -11,20 +11,24 @@ class PostsController < ApplicationController
   def show
   end
 
-  def new
-    @post = current_user.posts.build
-  end
 
   def create
-    @post = current_user.posts.build(post_params)
+    # @post = current_user.posts.build(post_params)
 
-    if @post.save
-      flash[:success] = "Your post has been created!"
-      redirect_to blog_editor_path
+    # if @post.save
+    #   flash[:success] = "Your post has been created!"
+    #   redirect_to blog_editor_path
+    # else
+    #   flash[:alert] = "Your new post couldn't be created!  Please check the form."
+    #   redirect_to blog_editor_new_path 
+    # end
+    if params[:create_post]
+      flash[:alert] = "CREATE POST - Post"
     else
-      flash[:alert] = "Your new post couldn't be created!  Please check the form."
-      redirect_to blog_editor_new_path 
+      flash[:alert] = "DRAFT POST - Post"
     end
+
+    redirect_to blog_editor_new_path
   end
 
   def edit

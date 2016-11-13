@@ -1,10 +1,10 @@
-<!-- Page Content -->
 <div id="page-content-wrapper">
 	<a href="#menu-toggle" class="btn btn-primary" id="menu-toggle">Toggle Menu</a>  
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12">
-				<%= form_for @post do |f| %>
+
+				<%= form_for @post, :url => editor_new_path do |f| %>
 
 				<% if @post.errors.any? %>
 				<div id="error_explanation">
@@ -30,11 +30,12 @@
 					<%= f.bootsy_area :content, class: "form-control", placeholder:"Content", rows: 16 %>
 				</div>
 
-				<%= f.submit %>
+				<%= submit_tag 'Create Post', name: 'create_post' %>
+				<%= submit_tag 'Draft Post', name: 'draft_post' %>
 				<% end %>
 
 			</div>
 		</div>
 	</div>
 </div>
-<!-- /#page-content-wrapper -->
+<!-- /#page-content-wrapper
