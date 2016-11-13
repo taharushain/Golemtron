@@ -15,13 +15,6 @@ Rails.application.routes.draw do
 	get "/blog/editor/new" => "editors#new", :as => :editor_new
 	post "/blog/editor/new" => "editors#create"
 
-	# namespace "/blog" do
-	# 	get "/editor" => "editors#index"
-	# 	get "/editor/new" => "editors#new", :as => :editor_new
-	# 	post "/editor/new" => "editors#create"
-	# end
-
-
 	# get "/blog" => "blog#home"
 	resources :posts, path: '/blog' do
 		resources :comments

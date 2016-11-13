@@ -29,9 +29,16 @@
         <div id="wrapper">
 
           <%= render 'layouts/editor_navbar' %>
-          <% flash.each do |name, msg| %>
-          <%= content_tag :div, msg, class: "alert alert-info" %>
-          <% end %>
+
+          <div id="page-content-wrapper">
+            <div class="container">
+              <% flash.each do |name, msg| %>
+              <%= content_tag :div, msg, class: "alert alert-info" %>
+              <% end %>
+            </div>
+          </div>
+
+
           <%= yield %>
 
         </div>
