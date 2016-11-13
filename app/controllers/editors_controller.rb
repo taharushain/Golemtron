@@ -18,19 +18,29 @@ class EditorsController < ApplicationController
 
     @post = current_user.posts.build(post_params)
 
-    if @post.save
-      flash[:success] = "Your post has been created!"
-      redirect_to blog_editor_path
-    else
-      flash[:alert] = "Your new post couldn't be created!  Please check the form."
-      render "new" 
+    if params[:create_post]
+      @post.is_drafted = false
+      @post.submitted = true
+      @post.published = false
+      if @post.save
+        flash[:success] = "Your post has been submitted!"
+        redirect_to blog_editor_path
+      else
+        flash[:alert] = "Your post couldn't be submitted!  Please check the form."
+        render "new" 
+      end
+    elsif params[:draft_post]
+      @post.is_drafted = true
+      @post.submitted = false
+      @post.published = false
+      if @post.save
+        flash[:success] = "Your post has been saved!"
+        redirect_to blog_editor_path
+      else
+        flash[:alert] = "Your post couldn't be saved!  Please check the form."
+        render "new" 
+      end
     end
-
-    # if params[:create_post]
-    #   flash[:alert] = "CREATE POST - Editor"
-    # else
-    #   flash[:alert] = "DRAFT POST - Editor"
-    # end
 
     # redirect_to blog_editor_new_path
 
