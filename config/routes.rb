@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 	get "/blog/editor" => "editors#index"
 	get "/blog/editor/new" => "editors#new", :as => :editor_new
 	post "/blog/editor/new" => "editors#create"
+	get "/blog/editor/drafts" => "editors#draft_list"
 
 	# get "/blog" => "blog#home"
 	resources :posts, path: '/blog' do

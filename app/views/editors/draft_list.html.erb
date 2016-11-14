@@ -1,5 +1,28 @@
-<% @posts.each do |post| %>
-	<%= render 'post', post: post %>
-<% end %>
 
-<%= paginate @posts %>
+
+
+<!-- Page Content -->
+<!-- <div id="page-content-wrapper">
+-->	
+<a href="#menu-toggle" class="btn btn-primary" id="menu-toggle">Toggle Menu</a>        
+
+<div class="container-fluid">
+
+	<% @posts.in_groups_of(2).each do |group| %>
+	<div class="row">
+		<% group.each do |post| %>
+		<div class="col-lg-6">
+			<%= render 'post', post: post %>
+		</div>
+		<% end %>
+	</div>
+	<% end %>
+
+	<%= paginate @posts %>
+</div>
+<!-- </div> -->
+<!-- /#page-content-wrapper -->
+
+
+<%= link_to "Create Post", blog_editor_new_path, :class => "btn btn-primary create-post-btn"%>
+

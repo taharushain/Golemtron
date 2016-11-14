@@ -10,6 +10,6 @@ class Post < ActiveRecord::Base
 	validates :content, presence: true
 	# validates :title, length: { minimum: 3, maximum: 120 }
 
-	has_attached_file :image, styles: { :medium => "640x", large: '1000x1000>' }, default_url: "/posts/:style/missing.png"
+	has_attached_file :image, styles: { :medium => "640x", large: '1000x1000>' }, default_url: "/posts/:style/missing.jpg"
 	validates_attachment :image, content_type: { content_type: ["image/jpeg", "image/gif", "image/png"] }
 end  

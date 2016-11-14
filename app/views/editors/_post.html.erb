@@ -1,11 +1,24 @@
-<div class="posts-wrapper">
+<!-- <div class="posts-wrapper">
   <div class="post">
-    <div class="post-head">
+    <div class="post-head" style="background-image: <%= post.image.url(:medium) %>;">
       <h2><%= post.title %></h2>
     </div>
     <div class="post-caption">
-    <%= post %>
+    <p><%= post.content %></p>
     </div>
     
+  </div>
+</div> -->
+
+
+<div class="">
+  <%= image_tag post.image.url(:medium), class:'img-responsive thumbnail' %>
+  <div class="wrapper">
+    <div class="caption post-content">
+
+      <h3><%= post.title %></h3>
+      <p><%= post.content %></p>  
+
+    </div>
   </div>
 </div>
