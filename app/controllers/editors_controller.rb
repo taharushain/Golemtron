@@ -46,6 +46,10 @@ class EditorsController < ApplicationController
 
   end
 
+  def draft_list
+    @posts = Post.where(is_drafted: true).all.order('created_at DESC').page params[:page]    
+  end
+
 
 
   private
